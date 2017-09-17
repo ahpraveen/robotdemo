@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170917 19:14:19.591" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\SP\PycharmProjects\robotdemo\testsuite\bdd_demo.robot" id="s1" name="Bdd Demo">
+<test id="s1-t1" name="The objective of this test is to ensure google search by name is working">
+<kw name="Given google search screen is displayed" library="search.lib">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20170917 19:14:20.232" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'</msg>
+<status status="PASS" endtime="20170917 19:14:26.510" starttime="20170917 19:14:20.232"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170917 19:14:27.680" starttime="20170917 19:14:26.511"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Google</arg>
+</arguments>
+<msg timestamp="20170917 19:14:27.696" level="INFO">Page title is 'Google'.</msg>
+<status status="PASS" endtime="20170917 19:14:27.697" starttime="20170917 19:14:27.681"></status>
+</kw>
+<status status="PASS" endtime="20170917 19:14:27.697" starttime="20170917 19:14:20.232"></status>
+</kw>
+<kw name="When search by name" library="search.lib">
+<arguments>
+<arg>Samsung</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+</arguments>
+<status status="PASS" endtime="20170917 19:14:27.781" starttime="20170917 19:14:27.700"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20170917 19:14:27.781" level="INFO">Typing text 'Samsung' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20170917 19:14:28.049" starttime="20170917 19:14:27.781"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//input[@value='Google Search']</arg>
+</arguments>
+<status status="PASS" endtime="20170917 19:14:28.167" starttime="20170917 19:14:28.050"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//input[@value='Google Search']</arg>
+</arguments>
+<msg timestamp="20170917 19:14:28.168" level="INFO">Clicking button 'xpath=//input[@value='Google Search']'.</msg>
+<status status="PASS" endtime="20170917 19:14:29.967" starttime="20170917 19:14:28.167"></status>
+</kw>
+<status status="PASS" endtime="20170917 19:14:29.967" starttime="20170917 19:14:27.699"></status>
+</kw>
+<kw name="Then relavant search result page should be displayed" library="search.lib">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Samsung - Google Search</arg>
+</arguments>
+<msg timestamp="20170917 19:14:29.999" level="INFO">Page title is 'Samsung - Google Search'.</msg>
+<status status="PASS" endtime="20170917 19:14:29.999" starttime="20170917 19:14:29.973"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170917 19:14:33.167" starttime="20170917 19:14:30.000"></status>
+</kw>
+<status status="PASS" endtime="20170917 19:14:33.167" starttime="20170917 19:14:29.971"></status>
+</kw>
+<status status="PASS" endtime="20170917 19:14:33.167" critical="yes" starttime="20170917 19:14:20.216"></status>
+</test>
+<status status="PASS" endtime="20170917 19:14:33.167" starttime="20170917 19:14:19.607"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Bdd Demo" pass="1">Bdd Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
