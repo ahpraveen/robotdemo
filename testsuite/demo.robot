@@ -1,3 +1,5 @@
+# Simple test using Robot framework
+
 *** Settings ***
 Library  Selenium2Library
 
