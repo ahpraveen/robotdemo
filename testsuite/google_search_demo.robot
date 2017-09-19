@@ -1,6 +1,8 @@
 *** Settings ***
-Documentation  Demo test using Robot framework
+Documentation  Test Script Structure should test setup, test and test teardown
 Library  Selenium2Library
+Test Setup  open browser and navigate to google.com
+Test Teardown  close the browser
 
 *** Variables ***
 ${URL}      http://www.google.com
@@ -8,11 +10,9 @@ ${Browser}      chrome
 
 *** Test Cases ***
 The objective of this test is to ensure google search by name is working
-        open browser and navigate to google.com
         Verify google search page should be displayed
         Search by name  Samsung
         Verify Samsung search result page is displayed
-        close the browser
 
 *** Keywords ***
 open browser and navigate to google.com
