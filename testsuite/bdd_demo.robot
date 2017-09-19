@@ -1,7 +1,6 @@
-# Thie test is to demo behavioural driven development
-# Author - Praveen Anna Haridas
-
 *** Settings ***
+Documentation  This test is to demo behavioural driven development
+...            author : Praveen Anna Haridas
 Resource  ../library/search.lib.robot
 
 *** Test Cases ***
