@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Test Script Structure should test setup, test and test teardown
+Metadata  Author - Praveen Anna Haridas
 Library  Selenium2Library
 
 *** Variables ***

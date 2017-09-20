@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation  This test is to demo behavioural driven development
-...            author : Praveen Anna Haridas
+...            second line
+Metadata       Author : Praveen Anna Haridas
 Resource  ../library/search.lib.robot
 
 *** Test Cases ***

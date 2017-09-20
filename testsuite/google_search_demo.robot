@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Test Script Structure should test setup, test and test teardown
+Metadata  Author - Praveen Anna Haridas
 Library  Selenium2Library
 Test Setup  open browser and navigate to google.com
 Test Teardown  close the browser

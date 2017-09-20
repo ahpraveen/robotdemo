@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Demo test using Robot framework
+Metadata  Author - Praveen Anna Haridas
 Library  Selenium2Library
 
 *** Variables ***

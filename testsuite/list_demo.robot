@@ -1,3 +1,6 @@
+*** Settings ***
+Metadata  Author - Praveen Anna Haridas
+
 *** Test Cases ***
 Example
     ${Name}=        Create List         John    Joe     Brito
